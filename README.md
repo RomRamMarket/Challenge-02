@@ -1,7 +1,7 @@
 # Challenge-02
 
-
-
+<h2> Actualización sobre el Unity Version Control </h2>
+Luego de tener problemas con el repositorio durante el reto anterior, Unity lanzó la versión 3.9.0 del Unity Hub. Con esta actualización, finalmente todo el grupo logró tener acceso a todos los repositorios de la organización. ¡Qué suerte!
 
 <h2> Crear cuerpo del kirby "original" </h2>
 
