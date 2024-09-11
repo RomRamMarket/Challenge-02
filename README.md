@@ -76,7 +76,7 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 <p> De la misma manera que se crearon los ojos y los brazos, creamos las piernas utilizando una game object capsule y ajustando su inclinación, posición y tamaño. Primero se obtuvo una primera versión de la pierna y luego dandole click derecho/duplicate se duplicó esa versión y se acomodó en el área que hacía falta</p>
 
 <image
-  src="KirbyTerrain/AlargandoYRotando.png"
+  src="KirbyTerrain/AlargandoYRotandoPierna.png"
   width = 90%
   height = 90%>
 
@@ -121,8 +121,7 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 
 
 <h2> Video de ejemplo del componente Rigid Body</h2>
-<p>Este en un video ejemplar de la utilidad del componente Rigid Body. Sin este componenete simplemente el Kirby estuviera en el aire sin moverse/caerse.</p>
-
+<p>Este en un <a href="https://youtu.be/XNS3pLBN0Tw?si=hKymJbaHU2NctdxO"> video ejemplar </a>  de la utilidad del componente Rigid Body. Sin este componenete simplemente el Kirby estuviera en el aire sin moverse/caerse.</p>
 
 
 
