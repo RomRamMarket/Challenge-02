@@ -191,3 +191,10 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
   width = 90%
   height = 90%>
 
+
+
+
+
+<h2>Historia de Kirby de Gabriel Romero</h2>
+
+<p> Recuerdo un poco la primera vez que vi a Kirby y supe quien era. Estaba en el cuarto de mi hermana, molestándola seguramente. La vi jugando algo que me pareció un poco extraño pues no lo había visto antes, o al menos no recordaba. Me quedé allí al lado de mi hermana, viendo cómo se movía el Kirby y como mi hermana jugaba. Me pareció muy curioso el juego y, a partir de ese día, siempre quería jugarlo. El único problema es que, como buen hermano menor, nunca me dejaban. Mi hermana nunca me dejaba jugar y, por mucho que insistiera, siempre me decía que no. Supongo que es normal en una relación de hermanos de distinta edad, donde yo quería hacer lo que ella hacía, pero nunca me dejaba. En conclusión, recuerdo más a Kirby por lo que veía jugar más que por lo que jugué.</p>
