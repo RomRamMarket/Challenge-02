@@ -79,7 +79,39 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 
 
 
+<h2> Crear el terreno </h2>
+
+<p> Similar a cuando elegimos un game 3d object regular, creamos un terreno.</p>
 
 
+
+
+
+<h2> Ajustando las dimensiones y resolución del terreno a las especificadas en las instrucciones</h2>
+
+
+
+
+
+<h2> Elevando terreno</h2>
+
+<p> Aunque ya pudieramos empezar a hacer montañas hay que destacar que para poder realizar hoyos necesitamos elevar el terreno un poco. </p>
+
+
+<h2>Referencia para el terreno.</h2>
+
+<p> Esta es una foto de referencia para replicar el relieve de nuestro terreno. La foto fue tomada de <a href="https://tangrams.github.io/heightmapper/#9.90833/18.2959/-66.1836"> aquí</a>. </p>
+
+
+
+
+<h2> Preparamos las herramientas para poder comenzar a hacer montañas</h2>
+<p> Debemos seleccionar "Raise or lower terrain" y posteriormente la forma de la brocha que queremos utilizar para hacer las montañas. Para implementar las montañas hacemos click de manera que el terreno vaya creando abultaciones que parezcan montañas. Si necesitamos que algun parte de nuestro terreno se hunda creando hoyos, lo podemos obtener con shift + click. </p>
+
+
+
+
+
+<h2>Hacemos las montañas de manera que replique el terreno escogido.</h2>
 
 
