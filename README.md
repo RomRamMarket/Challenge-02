@@ -103,7 +103,6 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 
 
 
-
 <h2> Añadir componente de Rigid Body.</h2>
 <p> Como pretendemos que en el resultado final de nuestro trabajo los Kirbys estén parados en un terreno siendo afectados por la gravedad le añadimos un componente de <code> Rigid Body</code>  para que también les afecte la gravedad. Rigid Body se obtiene luego de presionar <code> Add Componente/Physics/Rigid Body </code>. También nos aseguramos de que la opción de <code>Use Gravity</code> esté activa.</p>
 
@@ -121,8 +120,112 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 <p>Este en un <a href="https://youtu.be/XNS3pLBN0Tw?si=hKymJbaHU2NctdxO"> video ejemplar </a>  de la utilidad del componente Rigid Body. Sin este componenete simplemente el Kirby estuviera en el aire sin moverse/caerse.</p>
 
 <h2>Creando primera variante: Staff Kirby</h2>
+
+<image
+  src="StaffSpear/01-Staff1.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/02-Staff2.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/03-Staff3.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/07-StaffHat1.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/08-StaffHat2.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/09-StaffHat3.png"
+  width = 90%
+  height = 90%>
+
 <h2>Creando segunda variante: Spear Kirby</h2>
-<h2>Añadiendo poses a las variantes de Kirby</h2>
+
+<image
+  src="StaffSpear/05-Spear1.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/06-Spear2.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/10-SpearHat1.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/11-SpearHat2.png"
+  width = 90%
+  height = 90%>
+
+<h2>Añadiendo poses a las dos variantes de Kirby</h2>
+
+<image
+  src="StaffSpear/12-StaffPose1.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/13-StaffPose2.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/14-StaffPose3.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/15-StaffPose4.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/16-StaffPose5.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/17-SpearPose1.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/18-SpearPose2.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/19-SpearPose3.png"
+  width = 90%
+  height = 90%>
+
+<h2>Versiones finales de Staff Kirby y Spear Kirby</h2>
+
+<image
+  src="StaffSpear/20-FinalStaff.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/21-FinalSpear.png"
+  width = 90%
+  height = 90%>
 
 <h2> Crear el terreno.</h2>
 <p> Similar a cuando elegimos un <code> 3D game object</code> regular, creamos un terreno.</p>
