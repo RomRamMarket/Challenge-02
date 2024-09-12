@@ -247,8 +247,8 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
   height = 90%>
 <image
   src="KirbyTerrain/heightMapRes.png"
-  width = 90%
-  height = 90%>
+  width = 50%
+  height = 50%>
 
 
 
@@ -294,7 +294,70 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 
 
 
+  <h2> Colonizando el terreno</h2>
 
+  <p>Una vez todas nuestras variantes estén hechas si entramos a la carpeta de Prefabs debe verse similar a esta foto.</p>
+
+
+<image
+  src="KirbyTerrain2/Variantes.png"
+  width = 90%
+  height = 90%>
+
+<p>Para comenzar a instanciar las variantes seleccionamos una a una cada variante y la deslizamos hacia el terreno o hacia el área de <code>Hierarchy</code>. Note que una instancia se identifica con el cuadrado circulado en la foto. Una vez las instancias ya se encuentran en el área de <code>Hierarchy</code> lo que resta es ubicarlas en el terreno utilizando la herramienta <code>Position</code> a nuestro gusto.</p>
+
+<image
+  src="VariantesInstanciadas.png"
+  width = 90%
+  height = 90%>
+
+
+  <h2>Foto de instancia de Kirby Original dentro del terreno que ha sido colonizado.</h2>
+
+<image
+  src="KirbyTerrain2/Original.png"
+  width = 90%
+  height = 90%>
+
+
+  <h2>Foto de instancia de variante Kirby Magic dentro del terreno que ha sido colonizado.</h2>
+
+<image
+  src="KirbyTerrain2/Magic.png"
+  width = 90%
+  height = 90%>
+
+
+
+  <h2>Foto de instancia de variante Kirby Spear dentro del terreno que ha sido colonizado.</h2>
+
+<image
+  src="KirbyTerrain2/Spear.png"
+  width = 90%
+  height = 90%>
+
+
+
+  <h2>Foto de instancia de variante Kirby Spider dentro del terreno que ha sido colonizado.</h2>
+
+<image
+  src="KirbyTerrain2/Spider.png"
+  width = 90%
+  height = 90%>
+
+  <h2>Foto de instancia de variante Kirby Staff dentro del terreno que ha sido colonizado.</h2>
+
+<image
+  src="KirbyTerrain2/Staff.png"
+  width = 90%
+  height = 90%>
+
+
+
+
+
+
+  
 
 <h2>Historia de Kirby de Gabriel Romero</h2>
 
