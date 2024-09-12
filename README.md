@@ -12,6 +12,9 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
   width = 90%
   height = 90%>
 
+<h2>Creando primera variante: Staff Kirby</h2>
+<h2>Creando segunda variante: Spear Kirby</h2>
+<h2>Añadiendo poses a las variantes de Kirby</h2>
 
 
 <h2>Creamos folder llamado <code> Prefabs</code>. </h2>
