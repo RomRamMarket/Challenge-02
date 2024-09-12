@@ -12,11 +12,6 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
   width = 90%
   height = 90%>
 
-<h2>Creando primera variante: Staff Kirby</h2>
-<h2>Creando segunda variante: Spear Kirby</h2>
-<h2>Añadiendo poses a las variantes de Kirby</h2>
-
-
 <h2>Creamos folder llamado <code> Prefabs</code>. </h2>
 <p> En el área de project creamos un folder que tendrá todos los prefabs. La creación de este folder es principalmente para organización y evitar confusiones</p>
 
@@ -125,8 +120,9 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 <h2> Video de ejemplo del componente Rigid Body</h2>
 <p>Este en un <a href="https://youtu.be/XNS3pLBN0Tw?si=hKymJbaHU2NctdxO"> video ejemplar </a>  de la utilidad del componente Rigid Body. Sin este componenete simplemente el Kirby estuviera en el aire sin moverse/caerse.</p>
 
-
-
+<h2>Creando primera variante: Staff Kirby</h2>
+<h2>Creando segunda variante: Spear Kirby</h2>
+<h2>Añadiendo poses a las variantes de Kirby</h2>
 
 <h2> Crear el terreno.</h2>
 <p> Similar a cuando elegimos un <code> 3D game object</code> regular, creamos un terreno.</p>
