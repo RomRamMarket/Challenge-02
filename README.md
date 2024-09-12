@@ -4,6 +4,11 @@
 Luego de tener problemas con el repositorio durante el reto anterior, Unity lanzó la versión 3.9.0 del Unity Hub. Con esta actualización, finalmente todo el grupo logró tener acceso a todos los repositorios de la organización. ¡Qué suerte!
 
 
+<h2>Reflexión</h2>
+
+<p>En este reto tuvimos la oportunidad de experimentar aún más con Unity y diversas funcionalidades que nos facilitan nuestra experiencia. Por ejemplo, la creación de "Prefabs" es muy útil si queremos crear múltiples objetos con las mismas cualidades y no queremos cambiarlos uno a uno. Además el construir variantes de un mismo objeto nos permite tener un "molde" de nuestro objeto y trabajar sobre el lo que nos pareció sumamente eficiente para no tener que crear siempre objetos desde cero.</p>
+
+
 <h2> Crear cuerpo del kirby "original". </h2>
 <p> Utilizando <code> 3D Object</code> seleccionamos una esfera que va a funcionar como el cuerpo del prefab del kirby original.</p>
 
