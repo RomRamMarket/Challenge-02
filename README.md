@@ -126,7 +126,7 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 
 <h2>Creando variantes de los prefabs</h2>
 
-<p>Seleccionando el prefab <code>KirbyOriginal</code>, hacemos clic derecho y nos dirigimos hacia <code>Create -> Prefab Variant</code> para crear una copia independiente o <bold>variante</bold> del Kirby que ya habíamos creado. Esta variante está derivada del Kirby original, pero se puede modificar sin alterar la base. Utilizando variantes, podemos crear diferentes Kirbies con diferentes poses, disfrazes y objetos. Ahora creamos dos variantes: un <code>KirbyStaff</code> para el Kirby que tendrá un bastón y un <code>KirbySpear</code> para el Kirby que tendrá una lanza.</p>
+<p>Seleccionando el prefab <code>KirbyOriginal</code>, hacemos clic derecho y nos dirigimos hacia <code>Create -> Prefab Variant</code> para crear una copia independiente o <bold>variante</bold> del Kirby que ya habíamos creado. Esta variante está derivada del Kirby original, pero se puede modificar sin alterar la base. Utilizando variantes, podemos crear diferentes Kirbies con diferentes poses, disfrazes y objetos. Ahora creamos cuatro variantes: un <code>KirbyStaff</code> para el Kirby que tendrá un bastón, un <code>KirbySpear</code> para el Kirby que tendrá una lanza, un <code>KirbyMagic</code> para el Kirby que utiliza cartas magicas para atacar y <code>KirbySpider</code> para el Kirby que tiene poderes de araña.</p>
 
 <image
   src="StaffSpear/04-Variant.png"
@@ -191,7 +191,63 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
   width = 90%
   height = 90%>
 
-<h2>Añadiendo poses a las dos variantes de Kirby</h2>
+<h2>Creando tercera variante: Magic Kirby</h2>
+<p>Comenzaremos a crear nuestro sombrero de copa para Kirby, primero, crearemos una base utilizando <code>GameObject > 3D Object > Cylinder</code> con una escala modificada a <code>x = 1.6, y = 0.01, z = 1.6</code>. Enterraremos esta base en la cabeza de nuestro Kirby, asi dejando un espacio de su cabeza saliendo fuera de  la base:</p>
+<image
+  src="Magic+Spider Kirby/magic1.png"
+  width = 90%
+  height = 90%>
+
+<p>Luego, crearemos la copa de nuestro sombrero usando <code>GameObject > 3D Object > Cylinder</code> con escala <code>x = 0.7, y = 0.4, z = 0.7</code> y se coloca en el centro de la base donde pueda tapar por completo la cabeza de Kirby y conecte perfectamente con el sombrero:</p>
+<image
+  src="Magic+Spider Kirby/magic2.png"
+  width = 90%
+  height = 90%>
+
+<p>Despues, creamos la "cinta" de nuestro sombrero que decora la copa utilizando <code>GameObject > 3D Object > Cylinder</code> con escala <code>x = 0.729, y = 0.03117363, z = 0.792</code>, parecido a sus antecedentes, esta cinta se pondra entremedio de la copa y se empujara hasta tocar la base:</p>
+<image
+  src="Magic+Spider Kirby/magic3.png"
+  width = 90%
+  height = 90%>
+
+<p>Ahora a su arma principal, la carta magica. Se creara usando <code>GameObjects > 3D Objects > Cube</code> con una escala modificada a <code>x = 0.003, y = 0.25, z = 0.15</code>:</p>
+<image
+  src="Magic+Spider Kirby/magic5.png"
+  width = 90%
+  height = 90%>
+
+<p>Para terminar con esta variante, vamos a duplicar esta carta para que parezcan tres cartas magicas saliendo de las manos de Kirby y sus oponentes le tomen mas enserio. <code>Right Click 'Cube' > Duplicate (x2)</code> Separen las cartas duplicadas y arreglenlas alfrente de la mano de Kirby, para que parezcan recien tiradas:</p>
+<image
+  src="Magic+Spider Kirby/magic4.png"
+  width = 90%
+  height = 90%>
+
+<h2>Creando cuarta variante: Spider Kirby</h2>
+<p>Primero, crearemos la base del bombin para este Kirby usando <code>GameObjects > 3D Object > Capsule</code>con parametros <code>x = 1, y = 0.06793462, z = 1</code>. Parecido a Magic Kirby, esta base se pondra en la cabeza de Kirby, dejando que su cabeza traspase la base:</p>
+<image
+  src="Magic+Spider Kirby/spider1.png"
+  width = 90%
+  height = 90%>
+
+<p>Luego, crearemos el centro del bombin usando <code>GameObjects > 3D Objects > Capsule</code> con la escala <code>x = 0.75, y = 0.4, z = 0.75</code>. Este se pondra en el centro de la base sobre la cabeza de Kirby, cubriendo su cabeza y terminando el Bombin simple:</p>
+<image
+  src="Magic+Spider Kirby/spider2.png"
+  width = 90%
+  height = 90%>
+
+<p>Despues, crearemos las gemas que utilizaron para simular ojos de araña en el sombrero de Kirby. Para esta fase, crearemos tres gemas de tamaños distintos ya que serian tres gemas por cada lado (3 gemas derechas, 3 gemas izquierdas). Para esto, utilizaremos <code>GameObjects > 3D Objects > Capsule</code> para crear la gema inicial, esta con dimensiones <code>x = 0.07387 y = 0.06455, z = 0.06779</code>. Ahora, seleccionaremos esta gema creada y hacemos 2 copias mas <code>Right Click "Capsule" > Duplicate (x2)</code> y las configuramos en <code>x = 0.07387, y = 0.07103, z = 0.08296</code> y <code>x = 0.07387, y = 0.08987, z = 0.09553</code>. Con estas dos copias que llamaremos Gema Mediana y Gema Larga, ahora crearemos 3 copias mas, una para cada gema (Larga, Mediana y Pequeña) y las pondremos en un estilo tipo reflejo de espejo en el centro del bombin, asi simulando ojos de una araña:</p>
+<image
+  src="Magic+Spider Kirby/spider3.png"
+  width = 90%
+  height = 90%>
+
+<p>Por ultimo, crearemos unos "pedipalpos" para el fondo de la base del bombin utilizando la gema pequeña que creamos para simular los ojos de una araña. <code>Right Click "Capsule" (Cualquiera de las dos gemas pequeñas) > Duplicate (x2)</code> y las movemos hacia el fondo del bombin justo en la frente de Kirby pero en lados opuestos:</p>
+<image
+  src="Magic+Spider Kirby/spider4.png"
+  width = 90%
+  height = 90%>
+
+<h2>Añadiendo poses a dos variantes de Kirby</h2>
 
 <image
   src="StaffSpear/12-StaffPose1.png"
@@ -233,7 +289,7 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
   width = 90%
   height = 90%>
 
-<h2>Versiones finales de Staff Kirby y Spear Kirby</h2>
+<h2>Versiones finales de nuestras variantes</h2>
 
 <image
   src="StaffSpear/20-FinalStaff.png"
@@ -380,3 +436,7 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 <h2>Historia de Kirby de Gabriel Romero</h2>
 
 <p> Recuerdo un poco la primera vez que vi a Kirby y supe quien era. Estaba en el cuarto de mi hermana, molestándola seguramente. La vi jugando algo que me pareció un poco extraño pues no lo había visto antes, o al menos no recordaba. Me quedé allí al lado de mi hermana, viendo cómo se movía el Kirby y como mi hermana jugaba. Me pareció muy curioso el juego y, a partir de ese día, siempre quería jugarlo. El único problema es que, como buen hermano menor, nunca me dejaban. Mi hermana nunca me dejaba jugar y, por mucho que insistiera, siempre me decía que no. Supongo que es normal en una relación de hermanos de distinta edad, donde yo quería hacer lo que ella hacía, pero nunca me dejaba. En conclusión, recuerdo más a Kirby por lo que veía jugar más que por lo que jugué.</p>
+
+<h2>Historia de Kirby de Yadiel Mercado</h2>
+
+<p>Recuerdo el tiempo en que logre jugar mi instalacion favorita de nuestro heroe del dia, Kirby. Kirby: Triple Deluxe para el Nintendo 3DS fue una obra maestra que pienso que muchos no le dieron la oportunidad que se merece. Desde principio a fin el juego con un escenario hermoso, musica asombrosa y muchisimos personajes del universo de Kirby antes vistos y nuevos. Mi anecdota favorita de este juego es ya que fue un juego prestado por una amistad de intermedia, al llegar a un nivel dentro del circo que al parecer le dio mucha dificultad a mi amigo, este empezo a reirse maniaticamente. Al yo pasar este nivel personalmente, entendi porque su risa era tan maniatica y hasta el sol de hoy ese nivel nos aterroriza, con sus mecanicas confusas y musica burlante.</p>
