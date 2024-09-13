@@ -126,14 +126,20 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 
 <h2>Creando variantes de los prefabs</h2>
 
-<p>Seleccionando el prefab <code>KirbyOriginal</code>, hacemos clic derecho y nos dirigimos hacia <code>Create -> Prefab Variant</code> para crear una copia independiente o <bold>variante</bold> del Kirby que ya habíamos creado. Esta variante está derivada del Kirby original, pero se puede modificar sin alterar la base. Utilizando variantes, podemos crear diferentes Kirbies con diferentes poses, disfrazes y objetos. Ahora creamos cuatro variantes: un <code>KirbyStaff</code> para el Kirby que tendrá un bastón, un <code>KirbySpear</code> para el Kirby que tendrá una lanza, un <code>KirbyMagic</code> para el Kirby que utiliza cartas magicas para atacar y <code>KirbySpider</code> para el Kirby que tiene poderes de araña.</p>
+<p>Seleccionando el prefab <code>KirbyOriginal</code>, hacemos clic derecho y nos dirigimos hacia <code>Create -> Prefab Variant</code> para crear una copia independiente o <bold>variante</bold> del Kirby que ya habíamos creado. Esta variante está derivada del Kirby original, pero se puede modificar sin alterar la base. Utilizando variantes, podemos crear diferentes Kirbies con diferentes poses, disfrazes y objetos. Ahora creamos dos variantes: un <code>KirbyStaff</code> para el Kirby que tendrá un bastón y un <code>KirbySpear</code> para el Kirby que tendrá una lanza.</p>
 
 <image
   src="StaffSpear/04-Variant.png"
   width = 90%
   height = 90%>
 
-<h2>Creando primera variante: Kirby con bastón</h2>
+<h2>Creando primera variante: Staff Kirby</h2>
+<p>Para nuestra primera variante, queremos darle un bastón al Kirby.</p>
+
+<image
+  src="StaffSpear/example_staff.jpg"
+  width = 90%
+  height = 90%>
 
 <p>Realizando dos clics en el nuevo <code>KirbyStaff</code> para poder editarlo, primero creamos una jerarquía para el bastón. Hacemos esto dirigiéndonos a <code>GameObject -> Create Empty</code>. Evidentemente, esto creará un objeto vacío. Sin embargo, esto se nos hace útil para sostener todas las partes del bastón como un solo objeto bajo la misma jerarquía. A este objeto vacío simplemente lo llamamos <code>Staff</code>. Luego, bajo este objeto, nos dirigimos a <code>GameObject -> 3D Object -> Cylinder</code> para crear el bastón. Al cilindro se le aplican transformaciones y sus parámetros se observan en la siguiente imagen.</p>
 
@@ -142,7 +148,7 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
   width = 90%
   height = 90%>
 
-<p>Luego, creamos dos esferas para los bordes del bastón. Se ubican sus parámetros tales como se observan:</p>
+<p>Luego, creamos dos esferas para los bordes del bastón bajo la jerarquía de <code>Staff</code>. Se ubican sus parámetros tales como se observan:</p>
 
 <image
   src="StaffSpear/02-Staff2.png"
@@ -154,10 +160,14 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
   width = 90%
   height = 90%>
 
+<p>Ahora queremos crear el sombrero del Staff Kirby. Para esto, creamos otro cilindro y le aplicamos las transformaciones como se muestran en la siguiente imagen.</p>
+
 <image
   src="StaffSpear/07-StaffHat1.png"
   width = 90%
   height = 90%>
+
+<p>Añadimos el cilindro a otro objeto <code>Empty</code> y lo llamamos <code>Hat</code>. Luego, creamos otro cilindro y le modificamos sus atributos para simular la gema en el frente del sombrero.</p> 
 
 <image
   src="StaffSpear/08-StaffHat2.png"
@@ -172,14 +182,25 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 <h2>Creando segunda variante: Spear Kirby</h2>
 
 <image
+  src="StaffSpear/example_spear.jpg"
+  width = 90%
+  height = 90%>
+
+<p>De la misma forma que para el Staff Kirby, abrimos la variante derivada del Kirby original y creamos un <code>Empty</code> para la jerarquía del <code>Spear</code>. Similarmente, creamos un cilindro para actuar como nuestra lanza. Sus atributos se muestran en la siguiente imagen:</p>
+
+<image
   src="StaffSpear/05-Spear1.png"
   width = 90%
   height = 90%>
+
+<p>Ya que en Unity no tenemos una forma sencilla de crear conos por el momento, creamos un cubo y lo escalamos, rotamos y trasladamos de una manera específica para que pudiese simular la punta de la lanza con la mayor presición (y eficiencia) posible por nuestro equipo. Sus atributos se pueden observar a continuación.</p>
 
 <image
   src="StaffSpear/06-Spear2.png"
   width = 90%
   height = 90%>
+
+<p>Ahora creamos la banda del Spear Kirby usando una técnica similar a la que utilizamos para la punta de la lanza. Transformando un nuevo cubo cuidadosamente, la simulamos con los siguientes atributos:</p>
 
 <image
   src="StaffSpear/10-SpearHat1.png"
@@ -188,6 +209,52 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 
 <image
   src="StaffSpear/11-SpearHat2.png"
+  width = 90%
+  height = 90%>
+
+<h2>Añadiendo poses a las dos variantes de Kirby</h2>
+
+<p>El toque final para las variantes fue cambiar sus poses para que tuviesen más personalidad tal como el verdadero personaje de Kirby. El proceso fue cuestión de simplemente modificar las partes individuales del prefab, transformándolas como fuese necesario. En las siguientes imágenes se puede observar cómo se modificaron las partes del <code>KirbyStaff</code> para crear su pose.</p>
+
+<image
+  src="StaffSpear/12-StaffPose1.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/13-StaffPose2.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/14-StaffPose3.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/15-StaffPose4.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/16-StaffPose5.png"
+  width = 90%
+  height = 90%>
+
+<p>Ahora, hacemos lo mismo para el <code>KirbySpear</code>...</p>
+
+<image
+  src="StaffSpear/17-SpearPose1.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/18-SpearPose2.png"
+  width = 90%
+  height = 90%>
+
+<image
+  src="StaffSpear/19-SpearPose3.png"
   width = 90%
   height = 90%>
 
@@ -244,48 +311,6 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 <p>Por ultimo, crearemos unos "pedipalpos" para el fondo de la base del bombin utilizando la gema pequeña que creamos para simular los ojos de una araña. <code>Right Click "Capsule" (Cualquiera de las dos gemas pequeñas) > Duplicate (x2)</code> y las movemos hacia el fondo del bombin justo en la frente de Kirby pero en lados opuestos:</p>
 <image
   src="Magic+Spider Kirby/spider4.png"
-  width = 90%
-  height = 90%>
-
-<h2>Añadiendo poses a dos variantes de Kirby</h2>
-
-<image
-  src="StaffSpear/12-StaffPose1.png"
-  width = 90%
-  height = 90%>
-
-<image
-  src="StaffSpear/13-StaffPose2.png"
-  width = 90%
-  height = 90%>
-
-<image
-  src="StaffSpear/14-StaffPose3.png"
-  width = 90%
-  height = 90%>
-
-<image
-  src="StaffSpear/15-StaffPose4.png"
-  width = 90%
-  height = 90%>
-
-<image
-  src="StaffSpear/16-StaffPose5.png"
-  width = 90%
-  height = 90%>
-
-<image
-  src="StaffSpear/17-SpearPose1.png"
-  width = 90%
-  height = 90%>
-
-<image
-  src="StaffSpear/18-SpearPose2.png"
-  width = 90%
-  height = 90%>
-
-<image
-  src="StaffSpear/19-SpearPose3.png"
   width = 90%
   height = 90%>
 
@@ -450,3 +475,7 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 <h2>Historia de Kirby de Yadiel Mercado</h2>
 
 <p>Recuerdo el tiempo en que logre jugar mi instalacion favorita de nuestro heroe del dia, Kirby. Kirby: Triple Deluxe para el Nintendo 3DS fue una obra maestra que pienso que muchos no le dieron la oportunidad que se merece. Desde principio a fin el juego con un escenario hermoso, musica asombrosa y muchisimos personajes del universo de Kirby antes vistos y nuevos. Mi anecdota favorita de este juego es ya que fue un juego prestado por una amistad de intermedia, al llegar a un nivel dentro del circo que al parecer le dio mucha dificultad a mi amigo, este empezo a reirse maniaticamente. Al yo pasar este nivel personalmente, entendi porque su risa era tan maniatica y hasta el sol de hoy ese nivel nos aterroriza, con sus mecanicas confusas y musica burlante.</p>
+
+<h2>Historia de Kirby de Sebastián Ramírez</h2>
+
+<p>A pesar de ser un gran fanático de los juegos de Nintendo, realmente no he tenido mucha experiencia con los juegos de Kirby. Mi mayor experiencia con Kirby en los videojuegos ha sido con la campaña de World of Light en Super Smash Bros. Ultimate. Sin embargo, tengo varios recuerdos buenos y algunos chistosos con el personaje, porque ha sido popular entre mis grupos de amigos. Entre esos buenos recuerdos está el día que un amigo decidió regalarme un "beanie" de color rosa con la cara de Kirby en su frente. Aunque fue sencillo, fue un detalle dulce de su parte, especialmente considerando que no era ninguna ocasión especial; simplemente un día normal de verano. Quizás veré si algún día de estos encuentro el beanie y me lo pongo otra vez...</p>
