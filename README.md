@@ -300,6 +300,16 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
   src="StaffSpear/21-FinalSpear.png"
   width = 90%
   height = 90%>
+  
+<image
+  src="Magic+Spider Kirby/magic6.png"
+  width = 90%
+  height = 90%>
+  
+<image
+  src="Magic+Spider Kirby/spider5.png"
+  width = 90%
+  height = 90%>
 
 <h2> Crear el terreno.</h2>
 <p> Similar a cuando elegimos un <code> 3D game object</code> regular, creamos un terreno.</p>
