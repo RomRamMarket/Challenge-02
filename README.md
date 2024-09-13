@@ -124,12 +124,25 @@ Luego de tener problemas con el repositorio durante el reto anterior, Unity lanz
 <h2> Video de ejemplo del componente Rigid Body</h2>
 <p>Este en un <a href="https://youtu.be/XNS3pLBN0Tw?si=hKymJbaHU2NctdxO"> video ejemplar </a>  de la utilidad del componente Rigid Body. Sin este componenete simplemente el Kirby estuviera en el aire sin moverse/caerse.</p>
 
-<h2>Creando primera variante: Staff Kirby</h2>
+<h2>Creando variantes de los prefabs</h2>
+
+<p>Seleccionando el prefab <code>KirbyOriginal</code>, hacemos clic derecho y nos dirigimos hacia <code>Create -> Prefab Variant</code> para crear una copia independiente o <bold>variante</bold> del Kirby que ya habíamos creado. Esta variante está derivada del Kirby original, pero se puede modificar sin alterar la base. Utilizando variantes, podemos crear diferentes Kirbies con diferentes poses, disfrazes y objetos. Ahora creamos dos variantes: un <code>KirbyStaff</code> para el Kirby que tendrá un bastón y un <code>KirbySpear</code> para el Kirby que tendrá una lanza.</p>
+
+<image
+  src="StaffSpear/04-Variant.png"
+  width = 90%
+  height = 90%>
+
+<h2>Creando primera variante: Kirby con bastón</h2>
+
+<p>Realizando dos clics en el nuevo <code>KirbyStaff</code> para poder editarlo, primero creamos una jerarquía para el bastón. Hacemos esto dirigiéndonos a <code>GameObject -> Create Empty</code>. Evidentemente, esto creará un objeto vacío. Sin embargo, esto se nos hace útil para sostener todas las partes del bastón como un solo objeto bajo la misma jerarquía. A este objeto vacío simplemente lo llamamos <code>Staff</code>. Luego, bajo este objeto, nos dirigimos a <code>GameObject -> 3D Object -> Cylinder</code> para crear el bastón. Al cilindro se le aplican transformaciones y sus parámetros se observan en la siguiente imagen.</p>
 
 <image
   src="StaffSpear/01-Staff1.png"
   width = 90%
   height = 90%>
+
+<p>Luego, creamos dos esferas para los bordes del bastón. Se ubican sus parámetros tales como se observan:</p>
 
 <image
   src="StaffSpear/02-Staff2.png"
